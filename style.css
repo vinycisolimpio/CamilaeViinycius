@@ -1,0 +1,133 @@
+/* Reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff; /* Cor de fundo branca */
+    color: #000; /* Cor do texto preta */
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(90deg, #ff5a5f, #c71f37);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: #000; /* Preto para os links */
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    background-color: #333; /* Cor de fundo ao passar o mouse */
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px;
+    background-color: #fff; /* Fundo branco para as seções */
+    color: #000; /* Texto preto */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+section h2 {
+    color: #c71f37; /* Título da seção em vermelho */
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.timeline .event {
+    margin-bottom: 20px;
+}
+
+.timeline .event h3 {
+    color: #ff5a5f; /* Títulos dos eventos em vermelho */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.timeline .event p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.gallery .carousel {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.gallery .carousel img {
+    width: auto;
+    height: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery .carousel img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.videos video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #000; /* Fundo preto para o rodapé */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
